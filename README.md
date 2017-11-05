@@ -8,6 +8,7 @@ small rotating cursor in the terminal with a chosen message while executing.
 ### Usage: ###
 
 ```python
+from time import sleep
 from busy_bar import Progress, progress
 @progress()
 def long_work():
@@ -17,3 +18,6 @@ def main():
     with Progress("Busy..."):
         sleep(3)
 ```
+
+### Example: ###
+![Alt Text](https://raw.githubusercontent.com/eddebc/busy-bar/master/demo.gif "Decorator demo")
